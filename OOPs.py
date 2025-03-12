@@ -6,10 +6,13 @@ class employee:
         self.salary = 50000
         self.designation = "SDE"
         print("init method is working")
+        print(self.name)
         
     def travel(self, destination):
         print(f"This vacation destination might be {destination}")
         
 tony = employee()
+
+tony.travel("Mysuru")
 
             
