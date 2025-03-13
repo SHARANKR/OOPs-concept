@@ -19,7 +19,7 @@ class chatbook:
         option = input("Enter the number to choose the operation-> ")
         
         if option == 1:
-            pass
+            self.signup()
         elif option == 2:
             pass
         elif option == 3:
@@ -29,7 +29,11 @@ class chatbook:
         else:
             exit()
         
-    
+    def signup(self):
+        username = input("Enter your username")
+        pswd = input("Enter password")
+        print("Signup successfull!")
+        self.menu()
                 
 chat = chatbook()
 
