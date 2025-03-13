@@ -30,8 +30,10 @@ class chatbook:
             exit()
         
     def signup(self):
-        username = input("Enter your username")
-        pswd = input("Enter password")
+        username = input("Enter your username-> ")
+        pswd = input("Enter password-> ")
+        self.password = pswd
+        self.username = username
         print("Signup successfull!")
         self.menu()
                 
