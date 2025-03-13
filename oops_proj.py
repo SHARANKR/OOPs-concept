@@ -18,13 +18,13 @@ class chatbook:
         
         option = input("Enter the number to choose the operation-> ")
         
-        if option == 1:
+        if option == "1":
             self.signup()
-        elif option == 2:
+        elif option == "2":
             pass
-        elif option == 3:
+        elif option == "3":
             pass
-        elif option == 4:
+        elif option == "4":
             pass
         else:
             exit()
