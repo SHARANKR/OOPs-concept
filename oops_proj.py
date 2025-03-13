@@ -5,7 +5,7 @@ class chatbook:
         self.password = ""
         self.loggedin = False
         self.menu()
-        option = input("Enter the number to choose the operation-> ")
+        
         
     def menu(self):
         print(""" This is the menu to choose from:
@@ -15,6 +15,8 @@ class chatbook:
               3. To post something
               4. To send a message to a friend
               5. To end the menu""")
+        
+        option = input("Enter the number to choose the operation-> ")
         
         if option == 1:
             pass
