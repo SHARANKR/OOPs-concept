@@ -48,11 +48,14 @@ class chatbook:
             pswd = input("Enter the password-> ")
             if self.username == username and self.password == pswd:
                 print("Signin successfull!")
+                self.loggedin = True
                 self.menu()          
             else:
                 print("Enter the password correctly")
                 self.signin()
                 
+    
+            
     
 chat = chatbook()
 
