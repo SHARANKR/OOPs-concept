@@ -21,7 +21,7 @@ class chatbook:
         if option == "1":
             self.signup()
         elif option == "2":
-            pass
+            self.signin()
         elif option == "3":
             pass
         elif option == "4":
@@ -36,6 +36,21 @@ class chatbook:
         self.username = username
         print("Signup successfull!")
         self.menu()
+        
+    def signin(self):
+        if (self.username == "") and (self.password == ""):
+            print("Signup first")
+            self.signup()
+        else:
+            username = input("Enter the username-> ")
+            pswd = input("Enter the password-> ")
+            if self.username == username and self.password == pswd:
+                print("Signin successfull!")
+                self.menu()          
+            else:
+                print("Enter the password correctly")
+                self.signin()
                 
+
 chat = chatbook()
 
