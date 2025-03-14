@@ -23,7 +23,7 @@ class chatbook:
         elif option == "2":
             self.signin()
         elif option == "3":
-            pass
+            self.post()
         elif option == "4":
             pass
         else:
@@ -56,7 +56,12 @@ class chatbook:
                 
     def post(self):
         if self.loggedin == True:
-            
+            print("Enter the post below")
+            post = input("")
+            print(f"This is your post {post}")
+            self.menu()
+        else:
+            self.signin()
     
 chat = chatbook()
 
