@@ -62,6 +62,11 @@ class chatbook:
             self.menu()
         else:
             self.signin()
-    
+            
+    def message(self):
+        if self.loggedin == True:
+            friend = input("Enter the friend's name")
+            print("Enter the message below")
+            
 chat = chatbook()
 
