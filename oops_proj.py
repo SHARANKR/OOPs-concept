@@ -25,7 +25,7 @@ class chatbook:
         elif option == "3":
             self.post()
         elif option == "4":
-            pass
+            self.message()
         else:
             exit()
         
@@ -67,6 +67,11 @@ class chatbook:
         if self.loggedin == True:
             friend = input("Enter the friend's name")
             print("Enter the message below")
+            message = input("")
+            print(f"This is your message-> {message} to your friend {friend}")
+            self.menu()
+        else:
+            self.signin()
             
 chat = chatbook()
 
