@@ -30,6 +30,7 @@ class chatbook:
             exit()
         
     def signup(self):
+        print("Enter the signup details below")
         username = input("Enter your username-> ")
         pswd = input("Enter password-> ")
         self.password = pswd
@@ -42,6 +43,7 @@ class chatbook:
             print("Signup first")
             self.signup()
         else:
+            print("Enter the signin details below")
             username = input("Enter the username-> ")
             pswd = input("Enter the password-> ")
             if self.username == username and self.password == pswd:
@@ -51,6 +53,6 @@ class chatbook:
                 print("Enter the password correctly")
                 self.signin()
                 
-
+    
 chat = chatbook()
 
