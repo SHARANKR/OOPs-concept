@@ -54,7 +54,8 @@ class chatbook:
                 print("Enter the password correctly")
                 self.signin()
                 
-    
+    def post(self):
+        if self.loggedin == True:
             
     
 chat = chatbook()
